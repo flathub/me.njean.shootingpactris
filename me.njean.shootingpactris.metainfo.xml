@@ -52,6 +52,17 @@
   </provides>
 
   <releases>
+    <release version="1.2" date="2020-11-14">
+      <url type="details">https://framagit.org/nicooo/shpactris/-/tags/v1.2</url>
+      <description>
+        <p>
+	        Ghosts now have four different behaviours.
+        </p>
+        <p>
+	        Bosses now spawn half-screen damage zones that players have to avoid.
+        </p>
+      </description>
+    </release>
     <release version="1.0-online-beta3" date="2020-05-21">
       <url type="details">https://framagit.org/nicooo/shpactris/-/tags/v1.0-online-beta3</url>
       <description>

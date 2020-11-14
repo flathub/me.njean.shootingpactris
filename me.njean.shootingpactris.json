@@ -64,8 +64,8 @@
                 {
                     "type": "git",
                     "url": "https://framagit.org/nicooo/shpactris",
-                    "tag": "v1.0-online-beta3",
-                    "commit": "4456d5a8abf7a87d4a4086a2d1f2c32cfd26cd39"
+                    "tag": "v1.2",
+                    "commit": "6821659cec2e87b5b93bdbb600a3b1cb07163332"
                 },
                 {
                     "type": "file",
