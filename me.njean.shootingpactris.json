@@ -1,7 +1,7 @@
 {
     "app-id": "me.njean.shootingpactris",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "shpactris",
     "finish-args": [
@@ -63,7 +63,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://framagit.org/nicooo/shpactris",
+                    "url": "https://framagit.org/nicooo/shpactris.git",
                     "tag": "v1.2",
                     "commit": "6821659cec2e87b5b93bdbb600a3b1cb07163332"
                 },
