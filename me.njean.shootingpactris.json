@@ -1,11 +1,12 @@
 {
     "app-id": "me.njean.shootingpactris",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "shpactris",
     "finish-args": [
         "--socket=x11",
+        "--share=ipc",
         "--share=network",
         "--device=all",
         "--socket=pulseaudio"
@@ -23,7 +24,9 @@
                     "url": "https://downloads.sourceforge.net/project/scons/scons/3.1.2/scons-3.1.2.tar.gz"
                 }
             ],
-            "build-commands": [ "python3 setup.py install --prefix=/app" ]
+            "build-commands": [
+		"python3 -m pip install --prefix=/app ."
+	    ]
         },
         {
             "name": "godot",
@@ -34,7 +37,11 @@
                     "type": "archive",
                     "sha256": "556b564079fb1b21a05320c359268b2032c87d8b3bfaa4fd104ebf9c909ab87d",
                     "url": "https://downloads.tuxfamily.org/godotengine/3.2.1/godot-3.2.1-stable.tar.xz"
-                }
+                },
+		{
+		    "type": "patch",
+		    "path": "godot-build.patch"
+	        }
             ],
             "build-commands": [
                 "python3 /app/bin/scons -j$FLATPAK_BUILDER_N_JOBS platform=server tools=yes target=release_debug",
